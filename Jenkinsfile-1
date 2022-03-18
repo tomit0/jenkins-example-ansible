@@ -5,9 +5,6 @@ pipeline {
     stage('Hello') {
       steps {
         sh '''
-          uname -a
-          sudo apt-get update
-          sudo apt-get install ansible
           ansible --version
           ansible-playbook --version
           ansible-galaxy --version
